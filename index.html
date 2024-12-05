@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Attendence app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+    <!--header sectioin starts-->
+  <header>
+    <ion-icon class="menu-btn" name="reorder-three-outline"></ion-icon>
+    <h2>Self Attendence</h2>
+    
+
+    <div class="search-box">
+    <div class="input-box">
+        <ion-icon class="searchBack-btn" name="arrow-back"></ion-icon>
+
+    <input type="search" placeholder="Search attendence"
+    class="searchInput">
+    </div>
+    <ion-icon class="search-icon" name="search-outline"></ion-icon>
+    </div>
+ <div class="threeDot">
+    <ion-icon  name="ellipsis-vertical"></ion-icon>
+    
+</div>
+<p>Click the <span>+</span> below to add New File </p>
+  </header>
+
+  <!--header sectioin ends-->
+  
+  <!--Home section start-->
+  <section class="home-section">
+    <ul>
+    </ul>
+    <div class="new-file-btn" >
+     <ion-icon name="add"></ion-icon>
+    </div>
+<!--new file adder section starts-->
+<div class="back-drop"></div>
+    <div class="newFileModal">
+        <h2>Add subject or work</h2>
+        <input type="text" class="newFileInput"
+        placeholder="e.g Job or Company Name etc.">
+        
+        <div>
+            <button class="cancel-btn">
+                <ion-icon  class="cancelBtn"name="close"></ion-icon>
+                cancel
+            </button>
+            <button class="Add-btn">
+                <ion-icon name="add">
+                    
+                </ion-icon>
+                    
+                </ion-icon>
+                </ion-icon>
+                Add
+            </button>
+        </div>
+       
+    </div>
+    
+    <div class="attendenceModal">
+     <button class="p-btn">Present</button>
+     <button class="a-btn">Absent</button>
+     <button class="HD-btn">Half Day</button>
+     <button class="OT-btn">Over Time</button>
+     <button class="c-btn">Clear</button>
+
+     
+    </div>
+    <div class="overTimeModal">
+        <h3>Enter Hours below</h3>
+        <div>
+        <input class="otInput" value="0" type="number"><span>hrs</span>
+        </div>
+        <div class="btns">
+        <button class="otCancelBtn">
+            Cancel
+        </button>
+        <button class="otAddBtn">
+            Add
+        </button>
+      </div>
+     </div>
+    <!--new file adder section ends-->
+   
+  </section>
+  <section class="attendenceSheetSection">
+
+  </section>
+  <!--Home section ends-->
+
+</div>
+    
+
+    <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
